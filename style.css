@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(198, 156, 245, 0.6), rgba(255, 255, 255, 0.2)), url('/img/well-flower.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a, .register a, .trip-text a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #4E009D;
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.register a{
+    background: #4E009D;
+    border-radius: 10px;
+}
+.register a:hover, .trip-text a:hover{
+    color: #4E009D;
+    background-color: #ffffff;
+}
+.trip-text{
+    min-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.trip-text span{
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.trip-text h1{
+    font-size: 3.5em;
+}
+.trip-text a{
+    background: #4E009D;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    top: 100px;
+}
